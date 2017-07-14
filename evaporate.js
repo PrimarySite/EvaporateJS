@@ -1139,6 +1139,8 @@
 
       if (self.request.contentType) {
         xhr.setRequestHeader('Content-Type', self.request.contentType);
+      } else {
+        xhr.setRequestHeader('Content-Type', '');
       }
 
       if (self.request.md5_digest) {
